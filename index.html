@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dá Plant Hub</title>
+    
+    <!-- tailwind and daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Abril Fatface and Inter Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome kit  -->
+    <script
+      src="https://kit.fontawesome.com/549d303daa.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css classes  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "color-green": "#5c7452",
+              "color-pink": "#ad525b",
+              "color-white": "#FFF8F8",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- common css styles  -->
+    <style>
+      .font-abril-fatface {
+        font-family: "Abril Fatface", cursive;
+      }
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- navigation bar  -->
+      <nav class="navbar bg-color-green">
+        <div
+          class="container mx-auto flex items-center justify-between lg:my-6"
+        >
+          <div>
+            <img
+              class="max-w-[160px] md:max-w-[200px] lg:max-w-xs"
+              src="images/logo7.png"
+              alt=""
+            />
+          </div>
+          <div class="hidden lg:block">
+            <ul
+              class="font-inter font-semibold text-lg text-color-white flex items-center justify-between gap-16 list-none hover:cursor-pointer"
+            >
+              <li><a>HOME</a></li>
+              <li><a>SHOP</a></li>
+              <li><a>CONTACT US</a></li>
+            </ul>
+          </div>
+          <div class="hidden lg:block">
+            <button
+              class="btn btn-outline font-inter font-semibold text-lg text-color-white hover:bg-color-white hover:text-black btn-lg"
+            >
+              GET A PLANT
+            </button>
+          </div>
+          <div class="dropdown dropdown-end lg:hidden">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <img
+                class="max-w-[35px] md:max-w-[40px]"
+                src="images/flower.png"
+                alt=""
+              />
+            </label>
+            <ul
+              tabindex="0"
+              class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 font-inter font-semibold text-lg"
+            >
+              <li><a>HOME</a></li>
+              <li><a>SHOP</a></li>
+              <li><a>CONTACT US</a></li>
+              <button
+                class="btn btn-outline font-inter font-semibold text-lg btn-sm md:btn-md"
+              >
+                GET A PLANT
+              </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
